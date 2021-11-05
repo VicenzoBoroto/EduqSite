@@ -1,0 +1,111 @@
+.content{
+    display: grid;
+    
+    /*Colunas*/
+    grid-template-columns: 2fr 1fr;
+   
+    /*Linhas*/
+    grid-template-rows: 8rem 1fr;
+   
+    /* Esse código indica quem vai ocupar qual área*/
+    grid-template-areas:
+    "header header"
+    "left right"
+}
+
+header{
+    grid-area: header;
+    width: 100%;
+    background: var(--white); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container{
+    grid-area: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 8rem;
+    margin-top: 15rem;
+}
+
+main .imagem{
+    grid-area: right;
+    background: url("/assets/pngwing.com.png") no-repeat top/contain;
+    position: relative;
+    margin-left: 75rem;
+    margin-top: -20rem;
+}
+
+main .imagem img{
+    position: absolute;
+    width: 35rem;
+    height: 25rem;
+}
+
+.content header .logo{
+    width: 15rem;
+    height: 10rem;
+    margin-top: 4.4rem;
+    margin-right: 2rem;
+}
+
+header .title{
+    margin-left: 10rem;
+}
+
+main .header{
+    width:100%;
+}
+
+.button{
+    background: var(--white);
+    color: var(--green);
+    height: 5rem;
+    padding: 0 1.6rem;
+    cursor: pointer;
+    transition: filter .2s;
+    margin: auto 1rem;
+    font-size: 2rem;
+}
+
+input{
+    background: var(--yellow);
+    padding: 0 1.6rem;
+    height: 3rem;  
+    margin-left: 5rem;
+    outline: none;
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: clamp(20px, 5vw, 3.5rem);
+    margin-bottom:2rem;
+}
+
+main h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: clamp(20px, 5vw, 0.4rem);
+    margin-bottom:3rem;
+}
+
+button{
+    background: var(--lightblue);
+    color: var(--white);
+    height: 5rem;
+    width: 15rem;
+    padding: 0 1.8rem;
+    border: 0.2rem solid var(--white);
+    border-radius: 0.4rem;
+    transition: filter .2s;
+    cursor: pointer;
+    margin: auto 1rem;
+}
+
+button:hover, .button:hover{
+    filter: brightness(1.2)
+}

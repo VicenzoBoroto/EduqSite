@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    --lightblue: #00BFFF;
+    --white: #FFFAFA;
+    --yellow: #FFD700;
+    --green: #2F4F4F;
+ /*Esse método é utilizado para facilitar conversão em REM*/
+    font-size: 62.5%
+}
+
+body{
+    height: 100vh;
+    background: var(--lightblue);
+}
+
+body, button, input, textarea{
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
